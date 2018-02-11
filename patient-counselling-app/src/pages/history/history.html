@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Progress</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list *ngIf="patientHistoryArr.length>0">
+    <ion-item *ngFor="let history of patientHistoryArr">
+      <p>{{history.assessmentDate|date}}</p>
+      <div *ngFor="let emotion of history.faceAnalysisArr">
+        <p>Anger:{{emotion.anger}}</p>
+        <p>Sadness:{{emotion.sadness}}</p>
+        <p>Fear:{{emotion.fear}}</p>
+        <p>Neutral:{{emotion.neutral}}</p>
+        <p>Happiness:{{emotion.happiness}}</p>
+      </div>
+    </ion-item>
+  </ion-list>
+  <!-- <ion-item no-lines text-ecnter *ngIf="patientHistoryArr.length<==0"> -->
+    <ion-chip>
+      <ion-icon name="heart" color="danger"></ion-icon>
+      <ion-label>No History Available</ion-label>
+    </ion-chip>
+  <!-- </ion-item> -->
+</ion-content>

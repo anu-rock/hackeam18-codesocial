@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Video Therapy</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-item text-center>
+    <video src="assets/video/harvey.3gp" autoplay controls="false" preload></video>
+  </ion-item>
+
+  <ion-item no-lines text-center>
+    <button ion-button large (tap)="tapNextTherapyHandler()">Next Therapy</button>
+  </ion-item>
+</ion-content>

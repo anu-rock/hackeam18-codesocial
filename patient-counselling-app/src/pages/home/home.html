@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Counsel Mate
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item no-lines text-center>
+
+    <button ion-button large round (tap)="tapStartTherapy()">
+      Start Therapy
+    </button>
+
+  </ion-item>
+  <ion-item>
+    <ion-icon name="checkmark" item-start></ion-icon>
+    Last Therapy On
+    <ion-badge item-end>{{therapy.lastDate|date}}</ion-badge>
+  </ion-item>
+</ion-content>
+
+<ion-footer>
+  <ion-item text-center no-lines>
+    <button ion-button clear (tap)="tapTherapyHistoryButton()">
+      Therapy History
+    </button>
+  </ion-item>
+</ion-footer>

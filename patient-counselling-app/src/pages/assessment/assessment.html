@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Assessment</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-slides (ionSlideDidChange)="slideChanged()">
+    <ion-slide *ngFor="let image of imgArr">
+      <img data-src="assets/assessment/image{{image}}.jpg">
+    </ion-slide>
+
+  </ion-slides>
+
+</ion-content>
+<ion-footer>
+  <ion-item no-lines clear text-center>
+    <button ion-button *ngIf="showNextButton" full clear (tap)="tapNextHandler()">Next</button>
+    <img src="assets/icon/wait.svg" *ngIf="!showNextButton" alt="Waiting for image perception" width="50" height="50" />
+  </ion-item>
+
+</ion-footer>

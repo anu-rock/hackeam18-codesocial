@@ -16,7 +16,7 @@ required by the supervising doctor.
 
 ## Motivation
 
-The project was developed as a part of unique research-oriented hackathon organized bt [TEAMC18](http://teamc18.com/#) conference team. The hackathon was divided in phases starting from trekking to a particular place of interest, heathcare/hospitals in our case. Submitting a report based on trk formulating the problems in the healthcare industry and possible solution. This code is teh part of teh solution whivh was developed in 24 hours in teh hackathon held on 10-11 Feb 2018 at NSIT-NewDelhi.
+The project was developed as a part of unique research-oriented hackathon organized bt [TEAMC18](http://teamc18.com/#) conference team. The hackathon was divided in phases starting from trekking to a particular place of interest, heathcare/hospitals in our case, submitting a report based on trek analysis, the problems in the healthcare industry and possible solution. This code is teh part of the solution which was developed in 24 hours in the hackathon held on 10-11 Feb 2018 at NSIT-NewDelhi.
 
 ## Contributors
 
